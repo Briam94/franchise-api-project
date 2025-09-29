@@ -1,6 +1,7 @@
 # API de Gestión de Franquicias
 
-Una aplicación reactiva y funcional en Spring Boot 17 que permite crear y gestionar franquicias, sucursales y productos. Sigue la Clean Architecture del scaffold de Bancolombia y utiliza MongoDB reactivo para persistencia.
+Una aplicación reactiva y funcional en Spring Boot 17 que permite crear y gestionar franquicias, sucursales y productos. 
+Sigue la Clean Architecture del scaffold de Bancolombia y utiliza MongoDB reactivo para persistencia.
 
 ---
 
@@ -56,6 +57,7 @@ Una aplicación reactiva y funcional en Spring Boot 17 que permite crear y gesti
 ## Instalación
 
 Clona el repositorio y accede al directorio del proyecto:
+https://github.com/Briam94/franchise-api-project.git
 
 ---
 ## Configuración
