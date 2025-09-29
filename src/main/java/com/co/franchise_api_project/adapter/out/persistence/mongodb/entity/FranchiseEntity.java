@@ -10,8 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.List;
 
 @Data
-@Getter
-@Setter
 @AllArgsConstructor
 @Document("franchises")
 public class FranchiseEntity {

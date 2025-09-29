@@ -4,9 +4,11 @@ import com.co.franchise_api_project.domain.exception.NotFoundException;
 import com.co.franchise_api_project.domain.model.Franchise;
 import com.co.franchise_api_project.domain.port.FranchiseRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 @AllArgsConstructor
+@Service
 public class FranchiseUseCase {
 
     private final FranchiseRepository franchiseRepository;

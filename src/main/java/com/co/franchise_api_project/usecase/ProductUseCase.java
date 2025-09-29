@@ -6,6 +6,7 @@ import com.co.franchise_api_project.domain.model.Franchise;
 import com.co.franchise_api_project.domain.model.Product;
 import com.co.franchise_api_project.domain.port.FranchiseRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -13,6 +14,7 @@ import java.util.Comparator;
 import java.util.stream.Stream;
 
 @AllArgsConstructor
+@Service
 public class ProductUseCase {
 
     private final FranchiseRepository franchiseRepository;

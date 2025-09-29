@@ -61,10 +61,15 @@ https://github.com/Briam94/franchise-api-project.git
 
 ---
 ## Configuración
-Define la conexión a MongoDB en src/main/resources/application.yml o mediante variables de entorno:
+Define la conexión a MongoDB en src/main/resources/application.properties o mediante variables de entorno:
 
 spring.data.mongodb.uri= mongodb://localhost:27017/franchisesdb
 spring.web.flux.base-path= /api
+
+ejecuta el archivo src/main/resources/seed.js para generar los primeros datos de prueba
+Asegúrate de tener MongoDB corriendo y accesible.
+
+en el MongoDbCompass importa el archivo src/main/resources/seed.js para generar los primeros datos de prueba.
 
 ---
 

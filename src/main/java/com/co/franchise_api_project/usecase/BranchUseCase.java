@@ -5,11 +5,13 @@ import com.co.franchise_api_project.domain.model.Branch;
 import com.co.franchise_api_project.domain.model.Franchise;
 import com.co.franchise_api_project.domain.port.FranchiseRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.util.stream.Stream;
 
 @AllArgsConstructor
+@Service
 public class BranchUseCase {
 
     private final FranchiseRepository franchiseRepository;

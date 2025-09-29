@@ -6,17 +6,23 @@ import com.co.franchise_api_project.usecase.FranchiseUseCase;
 import com.co.franchise_api_project.usecase.ProductUseCase;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
-@NoArgsConstructor(force = true)
-@AllArgsConstructor
+@Component
+@RequiredArgsConstructor
 public class ApiHandler {
 
+    @Autowired
     private final FranchiseUseCase franchiseUseCase;
+    @Autowired
     private final BranchUseCase branchUseCase;
+    @Autowired
     private final ProductUseCase productUseCase;
 
     public Mono<ServerResponse> createFranchise(ServerRequest req) {

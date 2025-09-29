@@ -7,8 +7,6 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 
 @Data
-@Getter
-@Setter
 @AllArgsConstructor
 public class ProductEntity {
     @Id
